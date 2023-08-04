@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\subha\OneDrive\Desktop\zixin\vikatakavi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+285296689.index
+3460785950.index
+128632395.index
+127956403.index
+3824938255.index
+1196454267.index

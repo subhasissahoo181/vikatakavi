@@ -1,0 +1,27 @@
+
+package Database;
+import java.sql.*;
+public class CreateDB {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","admin");
+			//Execute querry
+			Statement st = con.createStatement();
+			int i= st.executeUpdate("CREATE TABLE CUSTOMER(cid number(10),name varchar2(32),email varchar2(32), mobile number(10),message varchar(250))");
+			//process result
+			if(i==0) {
+				System.out.println("Table Created");
+				System.out.println(i);
+			}
+			st.close();
+			con.close();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}
